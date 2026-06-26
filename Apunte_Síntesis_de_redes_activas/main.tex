@@ -1,0 +1,45 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\graphicspath{{Imagenes/}}
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black]{hyperref}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{titling}
+\usepackage[font=footnotesize]{caption}
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{sectsty} % <-- AÑADIR ESTE PAQUETE
+
+\sectionfont{\LARGE}
+\subsectionfont{\Large}
+\subsubsectionfont{\large}
+\numberwithin{figure}{section}
+\numberwithin{equation}{section}
+\begin{document}
+
+% === Carátula ===
+\input{caratula.tex}
+
+%\maketitle
+\tableofcontents
+\clearpage
+\include{bibliografía}
+\input{contenido/Introduccion}
+\input{contenido/01-Amplificadores Integrados Lineales}
+\input{contenido/02-Amplificador real realimentado por tensión}
+\input{contenido/03-Amplificadores realimentados por corriente (CFA)}
+\input{contenido/04-Amplificadores de transconductancia}
+\input{contenido/05-Estabilidad de los amplificadores realimentados}
+%\printbibliography
+\end{document}
